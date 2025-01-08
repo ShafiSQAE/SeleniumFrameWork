@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Purchase Group">
+<listeners>
+    <listener class-name="ListenerNew"/>
+</listeners>
+<groups>
+<run>
+    <include name="Purchase"/>
+</run>
+</groups>
+<test name="Submit Order Test">
+<classes>
+    <class name="SubmitOrderTest"/>
+</classes>
+</test>
+
+<test name="Error Validations Test">
+<classes>
+    <class name="ErrorValidationTest"/>
+</classes>
+</test>
+</suite>
